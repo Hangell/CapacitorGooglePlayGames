@@ -1,3 +1,4 @@
 export interface CapacitorGooglePlayGamesPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  signIn(): Promise<{ success: boolean; message?: string }>;
+  isAuthenticated(): Promise<{ isAuthenticated: boolean }>;
 }
